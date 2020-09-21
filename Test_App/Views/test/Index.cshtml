@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Test_App.Models.tbl_emps>
+
+@{
+    ViewBag.Title = "Table Of the Employees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Table Of The Employees</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.empId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.skills)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dept)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.empId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.skills)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.dept)
+    </td>
+    
+</tr>
+}
+
+    <p><a href=@Url.Action("MainDashboard","test")>Click Here</a></p>
+
+</table>

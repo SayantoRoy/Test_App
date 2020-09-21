@@ -1,0 +1,56 @@
+  body {
+    background-color: lightblue;
+  }
+
+  .table
+  {
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+      color: rgb(95, 91, 91);
+  }
+
+  .table thead th , .table tbody td
+  {
+      
+      padding: 20px;
+      text-align: center;
+      background-color: transparent;
+      
+  }
+  .table tbody tr
+  {
+      background-color: white;
+      overflow: hidden;
+      transition:0.5s;
+  }
+
+  .table thead
+  {
+      background-color: rgb(73, 65, 175);
+  }
+ 
+  .table thead th:first-of-type
+  {
+    border-top-left-radius: 20px;
+  }
+  .table thead th:last-of-type
+  {
+    border-top-right-radius: 20px;
+  }
+
+  
+
+  .table tbody tr:hover
+  {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.5);
+    
+      transform: scale(1.005);
+  }
+
+  
+  .table tbody td:hover
+  {
+    font-weight: bold;
+    /*color: rgb(0, 255, 170);*/
+     color: rgb(11, 68, 143);
+  }
